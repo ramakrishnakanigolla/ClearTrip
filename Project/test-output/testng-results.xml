@@ -29,12 +29,12 @@
       <![CDATA[====Browser closed====]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-09-10T17:34:48 IST" name="Suite" finished-at="2019-09-10T17:37:14 IST" duration-ms="146775">
+  <suite started-at="2019-09-10T18:16:26 IST" name="Suite" finished-at="2019-09-10T18:18:22 IST" duration-ms="116268">
     <groups>
     </groups>
-    <test started-at="2019-09-10T17:34:48 IST" name="Test" finished-at="2019-09-10T17:37:14 IST" duration-ms="146775">
+    <test started-at="2019-09-10T18:16:26 IST" name="Test" finished-at="2019-09-10T18:18:22 IST" duration-ms="116268">
       <class name="workplace.HotelBooking">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T17:35:37 IST" name="setupApplication" finished-at="2019-09-10T17:36:04 IST" duration-ms="27749" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T18:17:09 IST" name="setupApplication" finished-at="2019-09-10T18:17:36 IST" duration-ms="26911" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -44,11 +44,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="shouldBeAbleToSearchForHotels()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T17:36:04 IST" name="shouldBeAbleToSearchForHotels" finished-at="2019-09-10T17:36:52 IST" duration-ms="47902" status="PASS">
+        <test-method signature="shouldBeAbleToSearchForHotels()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T18:17:36 IST" name="shouldBeAbleToSearchForHotels" finished-at="2019-09-10T18:17:56 IST" duration-ms="20364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToSearchForHotels -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T17:36:52 IST" name="closeAppilcation" finished-at="2019-09-10T17:36:53 IST" duration-ms="789" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T18:17:56 IST" name="closeAppilcation" finished-at="2019-09-10T18:17:57 IST" duration-ms="723" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
@@ -57,7 +57,7 @@
         </test-method> <!-- closeAppilcation -->
       </class> <!-- workplace.HotelBooking -->
       <class name="workplace.SignInTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T17:34:48 IST" name="setupApplication" finished-at="2019-09-10T17:35:25 IST" duration-ms="36856" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T18:16:26 IST" name="setupApplication" finished-at="2019-09-10T18:16:59 IST" duration-ms="32618" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -67,11 +67,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T17:35:25 IST" name="shouldThrowAnErrorIfSignInDetailsAreMissing" finished-at="2019-09-10T17:35:36 IST" duration-ms="11284" status="PASS">
+        <test-method signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T18:16:59 IST" name="shouldThrowAnErrorIfSignInDetailsAreMissing" finished-at="2019-09-10T18:17:07 IST" duration-ms="8892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T17:35:36 IST" name="closeAppilcation" finished-at="2019-09-10T17:35:37 IST" duration-ms="749" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T18:17:08 IST" name="closeAppilcation" finished-at="2019-09-10T18:17:09 IST" duration-ms="1096" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
@@ -80,7 +80,7 @@
         </test-method> <!-- closeAppilcation -->
       </class> <!-- workplace.SignInTest -->
       <class name="workplace.FlightBookingTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T17:36:53 IST" name="setupApplication" finished-at="2019-09-10T17:37:09 IST" duration-ms="16121" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T18:17:57 IST" name="setupApplication" finished-at="2019-09-10T18:18:14 IST" duration-ms="16876" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -90,11 +90,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T17:37:09 IST" name="testThatResultsAppearForAOneWayJourney" finished-at="2019-09-10T17:37:13 IST" duration-ms="4240" status="PASS">
+        <test-method signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T18:18:14 IST" name="testThatResultsAppearForAOneWayJourney" finished-at="2019-09-10T18:18:21 IST" duration-ms="7879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T17:37:13 IST" name="closeAppilcation" finished-at="2019-09-10T17:37:14 IST" duration-ms="948" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T18:18:21 IST" name="closeAppilcation" finished-at="2019-09-10T18:18:22 IST" duration-ms="741" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
