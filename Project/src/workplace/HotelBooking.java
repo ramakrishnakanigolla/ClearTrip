@@ -14,55 +14,51 @@ public class HotelBooking extends BaseClass {
 
 	@Test
 	public void shouldBeAbleToSearchForHotels() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 		driver.findElement(By.linkText("Hotels")).click();
 		WebElement localityTextBox = driver.findElement(By.id("Tags"));
 		localityTextBox.sendKeys("indiranagar");
 		List<WebElement> fromlist = driver.findElements(By.xpath("//ul[@id='ui-id-1'] //li[@class='list']"));
-		for (int i = 0; i < fromlist.size(); i++)
-		{
+		for (int i = 0; i < fromlist.size(); i++) {
 			String data = fromlist.get(i).getText();
-			if (data.contains("Bangalore"))
-			{
+			if (data.contains("Bangalore")) {
 				fromlist.get(i).click();
 				break;
 			}
 		}
-		
+
 		driver.findElement(By.id("CheckInDate")).click();
-		
-		 selectDate("//div[@class='monthBlock first'] //span[@class='ui-datepicker-month']","November","//td[@ data-handler='selectDay'] ","29");
-		
+
+		selectDate("//div[@class='monthBlock first'] //span[@class='ui-datepicker-month']", "November",
+				"//td[@ data-handler='selectDay'] ", "29");
+
 		driver.findElement(By.id("CheckOutDate")).click();
-		 
-		 selectDate("//div[@class='monthBlock first'] //span[@class='ui-datepicker-month']","December","//td[@ data-handler='selectDay'] ","22");
-		
-		Select s =new Select(driver.findElement(By.id("travellersOnhome")));
+
+		selectDate("//div[@class='monthBlock first'] //span[@class='ui-datepicker-month']", "December",
+				"//td[@ data-handler='selectDay'] ", "22");
+
+		Select s = new Select(driver.findElement(By.id("travellersOnhome")));
 		s.selectByVisibleText("1 room, 1 adult");
 		driver.findElement(By.id("SearchHotelsButton")).click();
-		
+
 		Assert.assertTrue(isElementPresent(By.className("searchSummary")));
 	}
 
-	private void selectDate(String MxPath,String MValue,String DxPath,String DValue) {
-		
-		while(!driver.findElement(By.xpath(MxPath)).getText().contains(MValue))
-		{
+	private void selectDate(String MxPath, String MValue, String DxPath, String DValue) {
+
+		while (!driver.findElement(By.xpath(MxPath)).getText().contains(MValue)) {
 			driver.findElement(By.xpath("//a[@class='nextMonth ']")).click();
 		}
 		List<WebElement> fromlist = driver.findElements(By.xpath(DxPath));
-		for (int i = 0; i < fromlist.size(); i++)
-		{
+		for (int i = 0; i < fromlist.size(); i++) {
 			String data = fromlist.get(i).getText();
-			if (data.contains(DValue))
-			{
+			if (data.contains(DValue)) {
 				fromlist.get(i).click();
 				break;
 			}
 		}
 	}
 
-	
 	private boolean isElementPresent(By hotel) {
 		try {
 			driver.findElement(hotel);
