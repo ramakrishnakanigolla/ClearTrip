@@ -17,13 +17,10 @@ public class FlightBookingTest extends BaseClass {
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.id("OneWay")).click();
-		driver.findElement(By.id("FromTag")).clear();
-		driver.findElement(By.id("FromTag")).sendKeys("Bangalore");
-		
+		selectlocation("FromTag","Bangalore");
 		enterCityName("//ul[@id='ui-id-1'] //li[@class='list']", "Bangalore");
 		
-		driver.findElement(By.id("ToTag")).clear();
-		driver.findElement(By.id("ToTag")).sendKeys("Delhi");
+		selectlocation("ToTag","Delhi");
 		enterCityName("//ul[@id='ui-id-2'] //li[@class='list']", "Delhi");
 		
 		while (!driver.findElement(By.xpath("//span[@class='ui-datepicker-month' or @class='ui-datepicker-year']"))
@@ -45,6 +42,11 @@ public class FlightBookingTest extends BaseClass {
 	
 		
 		
+	}
+
+	private void selectlocation(String id, String value) {
+		driver.findElement(By.id(id)).clear();
+		driver.findElement(By.id(id)).sendKeys(value);
 	}
 
 	private void enterCityName(String xPath, String value) 
