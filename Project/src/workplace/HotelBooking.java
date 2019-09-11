@@ -1,8 +1,6 @@
 package workplace;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -58,14 +56,14 @@ public class HotelBooking extends BaseClass {
 			}
 		}
 	}
-
-	private boolean isElementPresent(By hotel) {
+	protected boolean isElementPresent(By by) {
 		try {
-			driver.findElement(hotel);
+			driver.findElement(by);
 			return true;
 		} catch (NoSuchElementException e) {
 			return false;
 		}
 	}
+
 
 }

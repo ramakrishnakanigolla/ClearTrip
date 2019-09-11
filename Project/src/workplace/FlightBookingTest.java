@@ -1,8 +1,7 @@
 package workplace;
 
+import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -12,21 +11,23 @@ import org.testng.annotations.Test;
 public class FlightBookingTest extends BaseClass {
 
 	@Test
-	public void testThatResultsAppearForAOneWayJourney() {
+	public void testThatResultsAppearForAOneWayJourney() throws IOException {
+		
+		ReadPropertiesFile rp=new ReadPropertiesFile();
+		driver.findElement(By.id(rp.getWay())).click();
+		selectlocation(rp.getflightfromtag(), rp.getflightfromvalue());
+		
+		getTheValue(rp.getxpathoffromlist(), rp.getflightfromvalue());
 
-		driver.findElement(By.id("OneWay")).click();
-		selectlocation("FromTag", "Bangalore");
-		getTheValue("//ul[@id='ui-id-1'] //li[@class='list']", "Bangalore");
+		selectlocation(rp.getflighttotag(), rp.getflighttovalue());
+		getTheValue(rp.getxpathoftolist(), rp.getflighttovalue());
 
-		selectlocation("ToTag", "Delhi");
-		getTheValue("//ul[@id='ui-id-2'] //li[@class='list']", "Delhi");
-
-		while (!driver.findElement(By.xpath("//span[@class='ui-datepicker-month' or @class='ui-datepicker-year']"))
-				.getText().contains("November")) {
-			driver.findElement(By.xpath("//a[@ class='nextMonth ']")).click();
+		while (!driver.findElement(By.xpath(rp.getmonthxpath()))
+				.getText().contains(rp.getmonth())) {
+			driver.findElement(By.xpath(rp.getclicknextxpath())).click();
 		}
-		getTheValue("//td[@ class=' undefined' or @class=' weekEnd undefined'] ", "29");
-		driver.findElement(By.id("SearchBtn")).click();
+		getTheValue(rp.getalldatesxpath(), rp.getdate());
+		driver.findElement(By.id(rp.getsearchbuttonid())).click();
 		Assert.assertTrue(isElementPresent(By.className("searchSummary")));
 
 	}
@@ -36,7 +37,8 @@ public class FlightBookingTest extends BaseClass {
 		driver.findElement(By.id(id)).sendKeys(value);
 	}
 
-	private void getTheValue(String xPath, String value) {
+	private void getTheValue(String xPath, String value)
+	{
 		List<WebElement> list = driver.findElements(By.xpath(xPath));
 		int count = list.size();
 		for (int i = 0; i <= count; i++) {
@@ -48,8 +50,7 @@ public class FlightBookingTest extends BaseClass {
 		}
 
 	}
-
-	private boolean isElementPresent(By by) {
+	protected boolean isElementPresent(By by) {
 		try {
 			driver.findElement(by);
 			return true;
@@ -57,5 +58,6 @@ public class FlightBookingTest extends BaseClass {
 			return false;
 		}
 	}
+
 
 }

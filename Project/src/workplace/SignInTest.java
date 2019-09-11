@@ -1,7 +1,5 @@
 package workplace;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
@@ -19,11 +17,9 @@ public class SignInTest extends BaseClass {
 		driver.findElement(By.id("password")).sendKeys("1234567890");
 		driver.findElement(By.id("signInButton")).click();
 		System.out.println(driver.findElement(By.xpath("//*[@id='errors1']/ol/li")).getText());
-
 		Assert.assertTrue(isElementPresent(By.className("primary")));
 	}
-
-	private boolean isElementPresent(By by) {
+	protected boolean isElementPresent(By by) {
 		try {
 			driver.findElement(by);
 			return true;
@@ -32,4 +28,5 @@ public class SignInTest extends BaseClass {
 		}
 	}
 
+	
 }

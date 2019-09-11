@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="workplace.FlightBookingTest">
+        <methods>
+          <include name="closeAppilcation"/>
+          <include name="setupApplication"/>
+          <include name="testThatResultsAppearForAOneWayJourney"/>
+        </methods>
+      </class> <!-- workplace.FlightBookingTest -->
       <class name="workplace.HotelBooking">
         <methods>
           <include name="closeAppilcation"/>
