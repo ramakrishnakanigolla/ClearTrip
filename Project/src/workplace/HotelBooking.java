@@ -65,5 +65,4 @@ public class HotelBooking extends BaseClass {
 		}
 	}
 
-
 }

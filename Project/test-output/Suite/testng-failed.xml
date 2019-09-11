@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="ClearTrip(failed)">
     <classes>
       <class name="workplace.FlightBookingTest">
         <methods>
@@ -17,6 +17,13 @@
           <include name="shouldBeAbleToSearchForHotels"/>
         </methods>
       </class> <!-- workplace.HotelBooking -->
+      <class name="workplace.SignInTest">
+        <methods>
+          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing"/>
+          <include name="closeAppilcation"/>
+          <include name="setupApplication"/>
+        </methods>
+      </class> <!-- workplace.SignInTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ClearTrip(failed) -->
 </suite> <!-- Failed suite [Suite] -->

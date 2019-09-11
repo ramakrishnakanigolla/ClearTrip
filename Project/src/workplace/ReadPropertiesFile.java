@@ -2,15 +2,13 @@ package workplace;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Reader;
-import java.net.URL;
 import java.util.Properties;
 
 
 
 public class ReadPropertiesFile {
 	protected Properties prop =null;
-	protected InputStream input=ReadPropertiesFile.class.getResource("C:\\\\Users\\\\user\\\\git\\\\ClearTrip\\\\Project\\\\src\\\\Configs\\\\Configuation.properties").openStream();
+	protected InputStream input=ReadPropertiesFile.class.getResource("/workplace/Configuation.properties").openStream();
 	
 	public ReadPropertiesFile() throws IOException
 	{

@@ -29,12 +29,12 @@
       <![CDATA[====Browser closed====]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-09-10T19:16:57 IST" name="Suite" finished-at="2019-09-10T19:18:42 IST" duration-ms="105029">
+  <suite started-at="2019-09-11T17:38:21 IST" name="Suite" finished-at="2019-09-11T17:39:52 IST" duration-ms="90381">
     <groups>
     </groups>
-    <test started-at="2019-09-10T19:16:57 IST" name="Test" finished-at="2019-09-10T19:18:42 IST" duration-ms="105029">
+    <test started-at="2019-09-11T17:38:21 IST" name="ClearTrip" finished-at="2019-09-11T17:39:52 IST" duration-ms="90381">
       <class name="workplace.HotelBooking">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T19:17:37 IST" name="setupApplication" finished-at="2019-09-10T19:18:00 IST" duration-ms="22878" status="PASS">
+        <test-method is-config="true" signature="browseropen()[pri:0, instance:workplace.HotelBooking@4470f8a6]" started-at="2019-09-11T17:39:12 IST" name="browseropen" finished-at="2019-09-11T17:39:28 IST" duration-ms="15967" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -43,61 +43,21 @@
               <![CDATA[====Application Started====]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="shouldBeAbleToSearchForHotels()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T19:18:00 IST" name="shouldBeAbleToSearchForHotels" finished-at="2019-09-10T19:18:13 IST" duration-ms="13901" status="PASS">
+        </test-method> <!-- browseropen -->
+        <test-method signature="shouldBeAbleToSearchForHotels()[pri:0, instance:workplace.HotelBooking@4470f8a6]" started-at="2019-09-11T17:39:28 IST" name="shouldBeAbleToSearchForHotels" finished-at="2019-09-11T17:39:50 IST" duration-ms="21939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToSearchForHotels -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T19:18:13 IST" name="closeAppilcation" finished-at="2019-09-10T19:18:14 IST" duration-ms="742" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.HotelBooking@4470f8a6]" started-at="2019-09-11T17:39:50 IST" name="closeAppilcation" finished-at="2019-09-11T17:39:52 IST" duration-ms="1625" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeAppilcation -->
-        <test-method is-config="true" signature="isElementPresent(org.openqa.selenium.By)[pri:0, instance:workplace.HotelBooking@484970b0]" started-at="2019-09-10T19:18:14 IST" name="isElementPresent" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1568123294682" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isElementPresent -->
       </class> <!-- workplace.HotelBooking -->
       <class name="workplace.SignInTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T19:16:57 IST" name="setupApplication" finished-at="2019-09-10T19:17:27 IST" duration-ms="30247" status="PASS">
+        <test-method is-config="true" signature="browseropen()[pri:0, instance:workplace.SignInTest@484970b0]" started-at="2019-09-11T17:38:50 IST" name="browseropen" finished-at="2019-09-11T17:39:06 IST" duration-ms="16268" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -106,61 +66,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[====Application Started====]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T19:17:27 IST" name="shouldThrowAnErrorIfSignInDetailsAreMissing" finished-at="2019-09-10T19:17:35 IST" duration-ms="8017" status="PASS">
+        </test-method> <!-- browseropen -->
+        <test-method signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:workplace.SignInTest@484970b0]" started-at="2019-09-11T17:39:06 IST" name="shouldThrowAnErrorIfSignInDetailsAreMissing" finished-at="2019-09-11T17:39:11 IST" duration-ms="5009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T19:17:35 IST" name="closeAppilcation" finished-at="2019-09-10T19:17:37 IST" duration-ms="1638" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.SignInTest@484970b0]" started-at="2019-09-11T17:39:11 IST" name="closeAppilcation" finished-at="2019-09-11T17:39:12 IST" duration-ms="702" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeAppilcation -->
-        <test-method is-config="true" signature="isElementPresent(org.openqa.selenium.By)[pri:0, instance:workplace.SignInTest@3e96bacf]" started-at="2019-09-10T19:17:37 IST" name="isElementPresent" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1568123257041" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isElementPresent -->
       </class> <!-- workplace.SignInTest -->
       <class name="workplace.FlightBookingTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T19:18:14 IST" name="setupApplication" finished-at="2019-09-10T19:18:34 IST" duration-ms="19557" status="PASS">
+        <test-method is-config="true" signature="browseropen()[pri:0, instance:workplace.FlightBookingTest@3e96bacf]" started-at="2019-09-11T17:38:21 IST" name="browseropen" finished-at="2019-09-11T17:38:40 IST" duration-ms="18655" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser Session Started====]]>
@@ -169,59 +89,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[====Application Started====]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T19:18:34 IST" name="testThatResultsAppearForAOneWayJourney" finished-at="2019-09-10T19:18:41 IST" duration-ms="7049" status="PASS">
+        </test-method> <!-- browseropen -->
+        <test-method signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:workplace.FlightBookingTest@3e96bacf]" started-at="2019-09-11T17:38:40 IST" name="testThatResultsAppearForAOneWayJourney" finished-at="2019-09-11T17:38:49 IST" duration-ms="9444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T19:18:41 IST" name="closeAppilcation" finished-at="2019-09-10T19:18:42 IST" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="closeAppilcation()[pri:0, instance:workplace.FlightBookingTest@3e96bacf]" started-at="2019-09-11T17:38:49 IST" name="closeAppilcation" finished-at="2019-09-11T17:38:50 IST" duration-ms="707" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[====Browser closed====]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeAppilcation -->
-        <test-method is-config="true" signature="isElementPresent(org.openqa.selenium.By)[pri:0, instance:workplace.FlightBookingTest@4470f8a6]" started-at="2019-09-10T19:18:42 IST" name="isElementPresent" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1568123322052" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated isElementPresent.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isElementPresent -->
       </class> <!-- workplace.FlightBookingTest -->
-    </test> <!-- Test -->
+    </test> <!-- ClearTrip -->
   </suite> <!-- Suite -->
 </testng-results>
